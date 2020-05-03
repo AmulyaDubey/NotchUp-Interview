@@ -38,7 +38,7 @@
 </body>
 <body >
  
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -123,13 +123,7 @@
             <option>Artificial Intelligence</option>
           </select>
         </div>
-        <br><br>
-        <div>
-            <h4>Choose Date and Slot:</h4>
-            
-            <input type="date" id="date" name="birthday" >
-            <input type="date" id="date" name="birthday" >
-        </div>
+        <br>
         
         
         <script src="./intl-tel-input-master/build/js/intlTelInput.min.js"></script>
@@ -144,8 +138,21 @@
        <br><br>
         <button type="submit" class="btn btn-primary">Submit</button>  
         
-      </form>
-     
+      
+      </form>   
+      <form id="myForm">
+        <select id="selectNumber">
+            <option>Choose a number</option>
+            <script src='./js/index.js'>
+    
+                var slots=new Array(main());
+                var myArray = new Array("1", "2", "3", "4", "5");
+                for(i=0; i<myArray.length; i++) {  
+                    document.write('<option value="' + myArray[i] +'">' + myArray[i] + '</option>');
+                }
+            </script>
+        </select>
+        </form>
     </center></body>
 
 </html>
