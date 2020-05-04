@@ -8,13 +8,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./styles/style.css">
-  <link rel="stylesheet" href="./intl-tel-input-master/build/css/intlTelInput.css">
-
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <script type="text/javascript" src="../data/slots.json"></script>
+  <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+    </script> 
+  <link rel="stylesheet" href="../intl-tel-input-master/build/css/intlTelInput.css">
 </head>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height: 100px;">
     <a class="navbar-brand">
-     <img src="./images/logo.jpg" alt="Logo" style="width:128px; height: 128px;">
+     <img src="../images/logo.jpg" alt="Logo" style="width:128px; height: 128px;">
      <p style="color: rgb(45, 230, 230); margin-right: 30px; font-size:20px; position: absolute; top: 20px; left: 1210px"><strong>Online Coding Courses <br> For Age 5 to 17 years</strong></p>
    </a>
    <ul class="navbar-nav">
@@ -34,7 +37,7 @@
  </nav>
 <body>
     <br>
-    <img src="./images/laptop.jpg" alt="Logo" width="168px" height="118px" style="position:absolute; top:0px; right:250px; ">
+    <img src="../images/laptop.jpg" alt="Logo" width="168px" height="118px" style="position:absolute; top:0px; right:250px; ">
 </body>
 <body >
  
@@ -51,16 +54,16 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./images/photo1.jpg" alt="Los Angeles" width="800" height="1000">
+      <img src="../images/photo1.jpg" >
     </div>
     <div class="carousel-item">
-      <img src="./images/photo2.jpg" alt="Chicago" width="800" height="1000">
+      <img src="../images/photo2.jpg" >
     </div>
     <div class="carousel-item">
-      <img src="./images/photo3.jpg" alt="New York" width="800" height="1000">
+      <img src="../images/photo3.jpg" >
     </div>
     <div class="carousel-item">
-        <img src="./images/photo4.png" alt="New York" width="800" height="1000">
+        <img src="../images/photo4.png">
       </div>
   </div>
   
@@ -126,33 +129,44 @@
         <br>
         
         
-        <script src="./intl-tel-input-master/build/js/intlTelInput.min.js"></script>
-        <script src="./intl-tel-input-master/build/js/intlTelInput.js"></script>
+        <script src="../intl-tel-input-master/build/js/intlTelInput.js"></script>
         <script>
             var input = document.querySelector("#phone");
             intlTelInput(input, {
             utilsScript: "js/utils.js"
             });
         </script>
-
-       <br><br>
-        <button type="submit" class="btn btn-primary">Submit</button>  
-        
-      
-      </form>   
-      <form id="myForm">
-        <select id="selectNumber">
-            <option>Choose a number</option>
-            <script src='./js/index.js'>
+        <script src="../js/loadData.js"></script>
+        <form id="myForm">
+          <select id="datePicker">
+              <option>Choose Date</option>
+              <script>
+                  var myArray = test();
+                  for(i=0; i<myArray.length; i++) {  
+                      document.write('<option value="' + myArray[i] +'">' + myArray[i] + '</option>');
+                  }
+              </script>
+          </select>
+          </form>
     
-                var slots=new Array(main());
-                var myArray = new Array("1", "2", "3", "4", "5");
-                for(i=0; i<myArray.length; i++) {  
-                    document.write('<option value="' + myArray[i] +'">' + myArray[i] + '</option>');
-                }
-            </script>
-        </select>
-        </form>
-    </center></body>
+       <br>
+       <button type="submit" class="btn btn-primary" onclick="func()">Find Slots</button> 
+       <br><br>
+          <p id="faltu"></p>
+          <script src="../js/loadData.js"></script>  
+           <script>
+           function func(){
+            var sel= document.getElementById('datePicker')
+            var course=document.getElementById('courses')
+            document.getElementById("faltu").innerHTML =celebrate(sel.value, course.value)
+           }
+           </script> 
+      </form>   
+      
+    </center>
+    
+    
+  </body>
+
 
 </html>
