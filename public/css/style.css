@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke
+    background-color: black
   }
   .carousel-inner img {
     width: 1450px;
@@ -28,3 +28,17 @@ body {
   width: 200px;
   border-color: black;
 }
+
+#foot{
+  background-color: black;
+  height: 500px;
+}
+#fill{
+  margin-left: 700px;
+}
+
+#bg{
+  background-image: url('../images/ex.jpg') ;
+
+}
+ 

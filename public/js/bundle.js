@@ -73,17 +73,21 @@ window.test=function()
 }
 function callback(data)
 { 
+    console.log('HEY:'+data)
+
+    document.getElementById("heading").innerHTML='Available Slots:'
+    try{
+        for(var i=0;i<=20;i++)
+    {
+        var myDiv = document.getElementById("listing"+i); 
+        myDiv.innerHTML=""
+    }
+}catch(e){}
     if(data.length==0)
     { 
         document.getElementById("heading").innerHTML="No Slots Available!";
         return;
         
-    }
-    document.getElementById("heading").innerHTML='Available Slots:'
-    for(var i=0;i<=20;i++)
-    {
-        var myDiv = document.getElementById("listing"+i); 
-        myDiv.innerHTML=''
     }
      for(var i=0;i<data.length;i++)
     {
@@ -115,11 +119,11 @@ function callback(data)
         button.style.fontSize="30px"
         button.style.borderRadius='35px'
         last.appendChild(button);
-        console.log(data)
 
 }
 window.celebrate=function(day, course)
 {
+
      k=day.toString().split(" ")
      var d=k[0]
      var i=0

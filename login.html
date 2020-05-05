@@ -34,8 +34,7 @@
   </ul>
  </nav>
 <body>
-    <br>
-    <img src="../images/laptop.jpg" alt="Logo" width="168px" height="118px" style="position:absolute; top:0px; right:250px; ">
+    <img src="../images/laptop-removebg-preview.jpg" alt="Logo" width="168px" height="118px" style="position:absolute; top:0px; right:250px; ">
 </body>
 <body >
  
@@ -75,13 +74,13 @@
 </div>
 
 </body>
-<body>
-    <br>
-    <p style="color:rgb(255, 2, 162); font-size: 40px; text-align: center;"><strong>Book Your First Free Coding Session!</strong></p>
- <center>
+<body id="bg">
+    <br><br>
+    <p style="color:rgb(252, 161, 41); font-size: 40px; text-align: center;"><strong>Book Your First Free Coding Session!</strong></p>
+ <div id="fill">
     <form style="margin: auto; ">
         <br>
-        <h3>Enter Parent Details:</h3>
+        <h3 style="color: white;">Enter Parent Details:</h3>
         <div class="form-group">
           <label for="Pname"></label>
           <input type="text" id="ip1" placeholder="Enter Parents Name"  />
@@ -102,7 +101,7 @@
              font-weight: 500;" /> 
     </div>
     <br><br>
-    <h3>Enter Student Details:</h3>
+    <h3 style="color: white;">Enter Student Details:</h3>
         <div class="form-group">
           <label for="Sname"></label>
           <input type="text" id="ip1" placeholder="Enter Students Name"  />
@@ -112,7 +111,7 @@
         </div>
       <br><br>
 
-        <h4>Select Course:</h4>
+        <h4 style="color: white;">Select Course:</h4>
         <div>
             <select id="courses" style="width:300px; height:40px">
             <option>Scratch Programming</option>
@@ -149,7 +148,7 @@
        <br>
        <button type="submit" class="btn btn-primary" onclick="func()" id="prefinal">Find Slots</button> 
        <br><br>
-       <h4 id="heading"></h4>
+       <h4 id="heading" style="color: lightgray;"></h4>
           <p id="faltu"></p>
           <script src="./js/bundle.js"></script> 
            <script>
@@ -159,32 +158,49 @@
              celebrate(sel.value, course.value)
            }
            </script> 
-           <div class="custom-control custom-radio" id="listing0"></div>
-           <div class="custom-control custom-radio" id="listing1"></div>
-           <div class="custom-control custom-radio" id="listing2"></div>
-           <div class="custom-control custom-radio" id="listing3"></div>
-           <div class="custom-control custom-radio" id="listing4"></div>
-           <div class="custom-control custom-radio" id="listing5"></div>
-           <div class="custom-control custom-radio" id="listing6"></div>
-           <div class="custom-control custom-radio" id="listing7"></div>
-           <div class="custom-control custom-radio" id="listing8"></div>
-           <div class="custom-control custom-radio" id="listing9"></div>
-           <div class="custom-control custom-radio" id="listing10"></div>
-           <div class="custom-control custom-radio" id="listing11"></div>
-           <div class="custom-control custom-radio" id="listing12"></div>
-           <div class="custom-control custom-radio" id="listing13"></div>
-           <div class="custom-control custom-radio" id="listing14"></div>
-           <div class="custom-control custom-radio" id="listing15"></div>
-           <div class="custom-control custom-radio" id="listing16"></div>
-           <div class="custom-control custom-radio" id="listing17"></div>
-           <div class="custom-control custom-radio" id="listing18"></div>
-           <div class="custom-control custom-radio" id="listing19"></div>
-           <div class="custom-control custom-radio" id="listing20"></div>
+           <div class="custom-control custom-radio" id="listing0" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing1" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing2" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing3" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing4" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing5" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing6" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing7" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing8" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing9" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing10" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing11" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing12" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing13" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing14" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing15" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing16" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing17" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing18" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing19" style="color: white;"></div>
+           <div class="custom-control custom-radio" id="listing20" style="color: white;"></div>
       </form>   
-    </center>
-    
+    </div>
     
   </body>
-
-
+  <div class="footer" id="foot" >
+    <br>
+    <h2 style="color: rgb(255, 255, 255);margin-left: 100px; " >About NotchUp</h2>
+     <br>
+     <p style="color: darkgray; margin-left:100px; margin-right: 200px;">
+      <span style="float: right">Course details<br>Know Our Team<br>Contact Us<br>Careers<br><br>Postal Address:<br>555 Bryant St., #718, Palo Alto, CA 94301, US
+      <br><br><br><br><br><br>
+        <img src="../images/twitter.jpg" width="50px" height="50px"> <img src="../images/fb.jpg" width="50px" height="50px"> <img src="../images/linkedIn.jpg" width="50px" height="50px"> <img src="../images/gmail.jpg" width="50px" height="50px">
+      </span>
+      <span style="float: left;">NotchUp is an initiative by IIT-D IIM-A Alumni to inculcate critical <br>
+        new-age skills in children which will prepare them for a bright future. <br>
+         65% of today's 5-year-old will in 15 years find themselves in  <br> 
+         jobs that don't exist today. More than 60 million of these new jobs  <br> 
+         will be in fields related to computer programming. NotchUp offers  <br> 
+         live interactive video classes from the comfort of your home which  <br> 
+         improve logical and problem solving skills by more than 75%. <br> 
+  
+        <br>Write to us at:  hello@notchup.co</span>
+    </p> 
+   </div>
 </html>
