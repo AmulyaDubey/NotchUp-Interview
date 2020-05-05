@@ -1,0 +1,30 @@
+body {
+    background-color: lightcyan
+  }
+  .carousel-inner img {
+    width: 1450px;
+    height: 700px;
+}  
+  
+  #ip1 {
+    border-radius: 25px;
+    text-align: center;
+    background-color: #e0e0e0 ; 
+    border-color: black;
+    border-width: 1px;
+     width: 350px; 
+     height: 60px;
+     font-weight: 500;
+}
+
+#prefinal{
+  background-color:#27eccb; /* Green */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  color: black;
+  width: 200px;
+  border-color: black;
+}
